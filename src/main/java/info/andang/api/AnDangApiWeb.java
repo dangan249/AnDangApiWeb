@@ -1,7 +1,7 @@
 package info.andang.api;
 
 import com.hubspot.dropwizard.guice.GuiceBundle;
-import info.andang.api.v1.HelloWorldResource;
+import info.andang.api.v1.ProfileResource;
 import io.dropwizard.Application;
 import io.dropwizard.setup.Bootstrap;
 import io.dropwizard.setup.Environment;
@@ -31,9 +31,5 @@ public class AnDangApiWeb extends Application<AnDangApiWebConfiguration> {
 
   @Override
   public void run(AnDangApiWebConfiguration anDangApiWebConfiguration, Environment environment) throws Exception {
-    final HelloWorldResource resource = new HelloWorldResource(
-        anDangApiWebConfiguration.getTemplate(),
-        anDangApiWebConfiguration.getDefaultName());
-    environment.jersey().register(resource);
   }
 }
