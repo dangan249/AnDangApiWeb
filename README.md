@@ -3,7 +3,7 @@ AnDangApiWeb
 
 ## Api That Get Provide my professional information from LinkedIn.
 
-### http://andang.info/v1/myprofile
+### http://api.andang.info/v1/myprofile
 
 ## Built using:
 --Dropwizard
