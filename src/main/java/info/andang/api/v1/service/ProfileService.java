@@ -17,7 +17,7 @@ public class ProfileService {
   private final String linkedInBaseURl;
   private final OAuthService linkedInClient;
 
-  private final String FIELDS = ":(id,first-name,last-name,headline,picture-url," +
+  private final String FIELDS = ":(id,first-name,last-name,headline,picture-urls::(original)," +
       "skills:(skill:(name)),languages:(language:(name))," +
       "location:(name),industry,num-connections,summary,"
       + "positions:(title,summary,is-current,company),"
